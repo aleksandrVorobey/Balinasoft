@@ -68,10 +68,10 @@
 			children = (
 				8408A40A2AC07BA300702C9E /* AppDelegate.swift */,
 				8408A40C2AC07BA300702C9E /* SceneDelegate.swift */,
-				8408A40E2AC07BA300702C9E /* ListViewController.swift */,
+				8408A42B2AC1A87200702C9E /* Controller */,
 				8408A4282AC0888A00702C9E /* Model */,
 				8408A4232AC080E400702C9E /* Manager */,
-				8408A4222AC0802400702C9E /* ListTableViewCell */,
+				8408A42C2AC1A89600702C9E /* View */,
 				8408A4102AC07BA300702C9E /* Main.storyboard */,
 				8408A4132AC07BA400702C9E /* Assets.xcassets */,
 				8408A4152AC07BA400702C9E /* LaunchScreen.storyboard */,
@@ -104,6 +104,22 @@
 				8408A4292AC088AA00702C9E /* ListModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8408A42B2AC1A87200702C9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8408A40E2AC07BA300702C9E /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8408A42C2AC1A89600702C9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8408A4222AC0802400702C9E /* ListTableViewCell */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
