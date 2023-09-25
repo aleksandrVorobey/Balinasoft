@@ -11,6 +11,7 @@ class ListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    private let picker = UIImagePickerController()
     private var listModels: [Content] = []
     private var page = 0
     private var id = 0
@@ -28,6 +29,9 @@ class ListViewController: UIViewController {
         activityIndicator.startAnimating()
         setupTableView()
         fetchItems()
+        
+        picker.sourceType = .camera
+        picker.delegate = self
     }
     
     private func setupTableView() {
@@ -105,9 +109,7 @@ extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        let picker = UIImagePickerController()
-        picker.sourceType = .camera
-        picker.delegate = self
+        
         present(picker, animated: true)
         id = indexPath.row
         print(indexPath.row)
